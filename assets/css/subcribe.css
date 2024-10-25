@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+# Subscribe Section
+--------------------------------------------------------------*/
+.subscribe .subscribe-form {
+    height: 100%;
+  }
+  
+  .subscribe .subscribe-form input[type="text"],
+  .subscribe .subscribe-form input[type="email"] {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: color-mix(
+      in srgb,
+      var(--background-color),
+      transparent 50%
+    );
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  }
+  
+  .subscribe .subscribe-form input[type="text"]:focus,
+  .subscribe .subscribe-form input[type="email"]:focus {
+    border-color: var(--accent-color);
+  }
+  
+  .subscribe .subscribe-form input[type="text"]::placeholder,
+  .subscribe .subscribe-form input[type="email"]::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
+  
+  .subscribe .subscribe-form button[type="submit"] {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .subscribe .subscribe-form button[type="submit"]:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  }
+  
